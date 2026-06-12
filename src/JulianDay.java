@@ -1,5 +1,5 @@
 public class JulianDay {
-    int JulianDay(int day, int month, int year) {
+    int calcJulianDay(int day, int month, int year) {
         if (month <= 2){
             month += 12;
             year -= 1;

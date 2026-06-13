@@ -10,6 +10,6 @@ public class JulianDayMain {
 
         JulianDay result = new JulianDay();
         result.calcJulianDay(day, month, year);
-        printf("Julian day for %02d.%02d.%04d: \n", day, month, year, result);
+        System.out.printf("Julian day for %02d.%02d.%04d: %s", day, month, year, result);
     }
 }

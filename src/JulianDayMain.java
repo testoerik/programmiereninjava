@@ -4,12 +4,11 @@ public class JulianDayMain {
             System.out.println("Usage: Day Month Year");
             return;
         }
-        int day = Integer.parseInt(args[0]);
-        int month = Integer.parseInt(args[1]);
-        int year = Integer.parseInt(args[2]);
+        int day_ = Integer.parseInt(args[0]);
+        int month_ = Integer.parseInt(args[1]);
+        int year_ = Integer.parseInt(args[2]);
 
-        JulianDay result = new JulianDay();
-        result.calcJulianDay(day, month, year);
-        System.out.printf("Julian day for %02d.%02d.%04d: %s", day, month, year, result);
+        int result_ = JulianDay.calcJulianDay(day_, month_, year_);
+        System.out.printf("Julian day for %02d.%02d.%04d: %d\n", day_, month_, year_, result_);
     }
 }
